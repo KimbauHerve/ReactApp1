@@ -1,12 +1,18 @@
 import React from "react";
+import Countries from "../components/Countries";
+import Logo from "../components/Logo";
+
+import Navigation from "../components/Navigation";
 
 
-const Home = (props) => {
+const Home = () => {
 
 return(
-    <>
-    <h1>Accueil {props.user}</h1>
-    </>
+    <div className="home">
+        <Navigation />
+        <Logo />
+        <Countries />
+    </div>
 );
 }
 
