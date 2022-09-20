@@ -1,16 +1,18 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-function Navigation() {
+const Navigation = () => {
     return (
-        <div className="navigation">
-            <NavLink to="/"  activeClassName="nav-active">
-                Accueil
-            </NavLink>
-            <NavLink to="/a-propos"   activeClassName="nav-active">
-                A propos
-            </NavLink>
-        </div>
+       <div className="navigation">
+        <ul>
+        <NavLink to="/" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
+            <li>Accueil</li>
+        </NavLink>
+        <NavLink to="/a-propos" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
+            <li>A propos</li>
+        </NavLink>
+        </ul>
+       </div>
     );
 };
 

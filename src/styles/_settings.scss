@@ -1,30 +1,32 @@
-$font-1 : "Poppins", sans-serif;
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/JosefinSans-Medium.ttf);
+}
 
-$color-1 : #61dafb;
-$color-2: #f7f7f7;
+$font-1: "font-1", sans-serif;
+
+$color-1: #61dafb;
+$color-2: salmon;
 $color-3: #282c34;
-$color-4: rgb(32,35,42);
+$white: rgb(243, 243, 243);
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-body{
-    margin: 0.4rem auto;
-    max-width: 1296px;
-    font-family: $font-1;
-    color: $color-3;
-    background-color: $color-2;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-li{
-    list-style-type: none;
+
+body {
+  background: $white;
+  font-family: $font-1;
+  // @include verticalCenter;
 }
-a{
-    text-decoration: none;
-    color: $color-3;
-    cursor: pointer;
-}
-a:visited{
-    color: $color-3;
+li {
+  list-style-type: none;
 }

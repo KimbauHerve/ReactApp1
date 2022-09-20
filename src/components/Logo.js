@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-function Logo() {
+const Logo = () => {
     return (
         <div className="logo">
-            <img src="./img/logo192.png" alt="Logo" />
+            <img src="./img/logo192.png" alt="" />
             <h3>React world</h3>
         </div>
     );
